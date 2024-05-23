@@ -33,6 +33,15 @@ public class CustomerController {
 	{
 		
 		return new ResponseEntity<>(custm.GetAll() ,HttpStatus.OK);
+		
+/*What are the benefits of ResponseEntity?
+Handling Different Response Types: ResponseEntity is a generic class, 
+allowing you to return various response types, such as JSON, XML, plain text,
+ or even custom objects, as the body of the response. 
+ This flexibility makes it easier to cater to different client requirements.
+*/		
+		
+		
 	}
 	
 	@GetMapping("/{id}")
